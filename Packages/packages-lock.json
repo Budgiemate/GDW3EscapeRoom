@@ -76,6 +76,14 @@
       "source": "builtin",
       "dependencies": {}
     },
+    "com.unity.media.osc": {
+      "version": "file:C:/Users/owenw/Downloads/UnityOSCProtocolSupport-main/UnityOSCProtocolSupport-main/com.unity.media.osc",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
+      }
+    },
     "com.unity.multiplayer.center": {
       "version": "1.0.1",
       "depth": 0,
