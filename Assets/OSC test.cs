@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class OSCtest : MonoBehaviour
 {
 
@@ -7,25 +6,11 @@ public class OSCtest : MonoBehaviour
     private Material _material;
     public Light light;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-
     void Start()
     {
-        // Cache the components once on start instead of every time kick() runs
         _renderer = GetComponent<Renderer>();
-
-        // Using .material creates a runtime clone you can safely modify
         _material = _renderer.material;
-
-        // Force Unity to enable emission on this material at runtime
         _material.EnableKeyword("_EMISSION");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void kick(float value)
