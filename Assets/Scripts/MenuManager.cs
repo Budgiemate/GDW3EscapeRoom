@@ -2,6 +2,7 @@ using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections;
 
 public class MenuManager : MonoBehaviour
 {
@@ -10,10 +11,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject aButton;
     [SerializeField] private GameObject yButton;
     [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private GameObject journal;
+    [SerializeField] private GameObject creditsPanel;
 
-    [SerializeField] private KeyCode openJournalKey;
-    [SerializeField] private KeyCode closeJournalKey;
+    [SerializeField] private Image fadeImage;
 
     public void LoadTitleScreen()
     {
@@ -51,9 +51,19 @@ public class MenuManager : MonoBehaviour
         yButton.SetActive(true);
     }
 
-    public void LoadGame()
+    public void YButton()
     {
-        SceneManager.LoadSceneAsync(1);
+        FadeAndLoad("Game", 2);
+    }
+
+    public void LoadCredits()
+    {
+        creditsPanel.SetActive(true);
+    }
+
+    public void HideCredits()
+    {
+        creditsPanel.SetActive(false);
     }
 
     public void ExitGame()
@@ -61,16 +71,49 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    private void Update()
+    public void FadeAndLoad(string sceneName, float duration)
     {
-        if (Input.GetKeyDown(openJournalKey) && Time.timeScale != 0)
+        StartCoroutine(FadeTransition(sceneName, duration));
+    }
+
+    //Plays a fade in effect and changes the scene
+    IEnumerator FadeTransition(string sceneName, float duration)
+    {
+        float time = 0;
+        Color color = fadeImage.color;
+        while (time < duration)
         {
-            journal.SetActive(true);
+            time += Time.deltaTime;
+
+            color.a = time / duration;
+
+            fadeImage.color = color;
+
+            yield return null;
         }
 
-        if (Input.GetKeyDown(closeJournalKey) && Time.timeScale != 0)
+        SceneManager.LoadScene(sceneName);
+    }
+
+    //Plays a fade out effect when the new scene is loaded
+    IEnumerator FadeOut()
+    {
+        float time = 0;
+        Color color = fadeImage.color;
+        while (time < 1)
         {
-            journal.SetActive(false);
+            time += Time.deltaTime;
+
+            color.a = 1f - (time / 1f);
+
+            fadeImage.color = color;
+
+            yield return null;
         }
+    }
+
+    private void Start()
+    {
+        StartCoroutine(FadeOut());
     }
 }
