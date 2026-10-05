@@ -1,4 +1,10 @@
 ﻿<Solution>
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
+  <Project Path="Unity.Media.Osc.csproj" />
+  <Project Path="Unity.Media.Osc.Components.csproj" />
+  <Project Path="Unity.Media.Osc.Editor.csproj" />
   <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Unity.Media.Osc.Net.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
 </Solution>
