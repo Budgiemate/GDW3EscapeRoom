@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Shroomhider
+  - CutMushroom
+  - Knife
+  - WallMushroom
   layers:
   - Default
   - TransparentFX

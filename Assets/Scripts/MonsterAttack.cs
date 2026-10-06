@@ -3,12 +3,12 @@ using System.Collections;
 
 public class MonsterAttack : MonoBehaviour
 {
-    public GameObject door;
-    public bool hideDoor = false;
-    
-    public GameObject monster;
-    public float attackDelay = 10f;
-    public string attackAnimationName = "";
+    [SerializeField] private GameObject door;
+    [SerializeField] private bool hideDoor = false;
+
+    [SerializeField] private GameObject monster;
+    [SerializeField] private float attackDelay = 10f;
+    [SerializeField] private string attackAnimationName = "";
 
     private bool triggered = false;
 
