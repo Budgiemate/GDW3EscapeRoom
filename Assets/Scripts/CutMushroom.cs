@@ -5,7 +5,7 @@ public class CutMushroom : MonoBehaviour
    [SerializeField] private AudioClip mushroomCut;
    [SerializeField] private GameObject cutMushroom;
    [SerializeField] private GameObject wallMushroom;
-   [SerializeField] private AudioSource audioSource;
+   //[SerializeField] private AudioSource audioSource;
 
 
    private bool isCut = false;
@@ -37,7 +37,7 @@ public class CutMushroom : MonoBehaviour
       
       if (mushroomCut != null)
       {
-         audioSource.PlayOneShot(mushroomCut);
+         //audioSource.PlayOneShot(mushroomCut);
       }
       
       if (cutMushroom != null)

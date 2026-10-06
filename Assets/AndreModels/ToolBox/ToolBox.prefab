@@ -827,9 +827,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dddda18a9a53c274dba74cc182862545, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2868435112160868207}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: dddda18a9a53c274dba74cc182862545, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5936837644420380205}
   m_SourcePrefab: {fileID: 100100000, guid: dddda18a9a53c274dba74cc182862545, type: 3}
 --- !u!4 &5134507415197494349 stripped
 Transform:
@@ -863,24 +860,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5936837644420380205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5479402894598141687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c02fbcda05d107c4387b17f71d567ee1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SlotManager
-  slot1: {fileID: 8851358005067557129}
-  slot1Ans: 1
-  slot2: {fileID: 2780971373878846453}
-  slot2Ans: 2
-  slot3: {fileID: 7644348688469284065}
-  slot3Ans: 3
-  slot4: {fileID: 3021560292254070024}
-  slot4Ans: 4
-  anim: {fileID: 2868435112160868207}
