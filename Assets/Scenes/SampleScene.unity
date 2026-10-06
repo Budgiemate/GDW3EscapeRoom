@@ -639,6 +639,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05d7918459dfb146b769d3b96ae5404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShroomLightManager
+  mindist: 1
+  maxdist: 3
+  texts:
+  - {fileID: 124270099}
 --- !u!4 &672086932
 Transform:
   m_ObjectHideFlags: 0

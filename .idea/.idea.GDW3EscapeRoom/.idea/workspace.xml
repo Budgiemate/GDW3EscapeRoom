@@ -12,12 +12,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b5e55086-8d24-4267-b503-f04c039af496" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GDW3EscapeRoom/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GDW3EscapeRoom/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AndreModels/Monster/Monster.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AndreModels/Monster/Monster.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AndreModels/ToolBox/ToolBox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AndreModels/ToolBox/ToolBox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Testing.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CutMushroom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CutMushroom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mushroom Lighting syste/ShroomLightManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mushroom Lighting syste/ShroomLightManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/OwenMaterials/tex.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/OwenMaterials/tex.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
