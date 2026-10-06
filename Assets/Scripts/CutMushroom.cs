@@ -31,19 +31,6 @@ public class CutMushroom : MonoBehaviour
       }
    }
    
-   private void OnTriggerEnter(Collider other)
-   {
-      if (isCut)
-      {
-         return;
-      }
-
-      if (other.CompareTag("Knife"))
-      {
-         MushroomCut();
-      }
-   }
-   
    private void MushroomCut()
    {
       isCut = true;
