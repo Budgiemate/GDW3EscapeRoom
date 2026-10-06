@@ -69,7 +69,7 @@ public class SlotManager : MonoBehaviour
         }
     }
 
-    void MoveSlot1()
+    public void MoveSlot1()
     {
         if (trigger == false)
         {
@@ -87,7 +87,7 @@ public class SlotManager : MonoBehaviour
         }
     }
 
-    void MoveSlot2()
+    public void MoveSlot2()
     {
         if (trigger == false)
         {
@@ -105,7 +105,7 @@ public class SlotManager : MonoBehaviour
         }
     }
 
-    void MoveSlot3()
+    public void MoveSlot3()
     {
         if (trigger == false)
         {
@@ -123,7 +123,7 @@ public class SlotManager : MonoBehaviour
         }
     }
 
-    void MoveSlot4()
+    public void MoveSlot4()
     {
         if (trigger == false)
         {
