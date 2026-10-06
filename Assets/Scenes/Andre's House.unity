@@ -1288,6 +1288,18 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7425383180895326887, guid: f7104eaddb5c5f342b2bf3d5c7bbec3a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a9d600305b29f645830ac7f1d33cf65, type: 2}
+    - target: {fileID: -4191872778026563558, guid: f7104eaddb5c5f342b2bf3d5c7bbec3a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f852ff14e16ffa40b6fa3b2c29bb47e, type: 2}
+    - target: {fileID: -3609673806938500726, guid: f7104eaddb5c5f342b2bf3d5c7bbec3a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5f852ff14e16ffa40b6fa3b2c29bb47e, type: 2}
     - target: {fileID: 919132149155446097, guid: f7104eaddb5c5f342b2bf3d5c7bbec3a, type: 3}
       propertyPath: m_Name
       value: Monster
