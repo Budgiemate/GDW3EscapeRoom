@@ -6,6 +6,8 @@ using System.Collections;
 
 public class MenuManager : MonoBehaviour
 {
+    [SerializeField] private string sceneToLoad;
+
     [SerializeField] private GameObject pButton;
     [SerializeField] private GameObject lButton;
     [SerializeField] private GameObject aButton;
@@ -53,7 +55,7 @@ public class MenuManager : MonoBehaviour
 
     public void YButton()
     {
-        FadeAndLoad("Game", 2);
+        FadeAndLoad(sceneToLoad, 2);
     }
 
     public void LoadCredits()
@@ -66,7 +68,7 @@ public class MenuManager : MonoBehaviour
         creditsPanel.SetActive(false);
     }
 
-    public void ExitGame()
+    public void QuitGame()
     {
         Application.Quit();
     }
