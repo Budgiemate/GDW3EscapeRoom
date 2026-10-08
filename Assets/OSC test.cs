@@ -27,14 +27,14 @@ public class OSCtest : MonoBehaviour
         if (value > 0)
         {
             light.intensity = value * 50.0f;
-            Color finalColor = Color.white * (1 + value * 100);
+            Color finalColor = Color.cyan * (1 + value * 100);
             _material.SetColor("_EmissionColor", finalColor);
             DynamicGI.SetEmissive(_renderer, finalColor);
         }
         else
         {
             light.intensity = 0.0f;
-            Color finalColor = Color.white;
+            Color finalColor = Color.cyan;
             _material.SetColor("_EmissionColor", finalColor);
             DynamicGI.SetEmissive(_renderer, finalColor);
         }
