@@ -189,7 +189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607554300351413383, guid: 4787b777db887be47b6448dea5629414, type: 3}
       propertyPath: m_Intensity
-      value: 0
+      value: 1.07497
       objectReference: {fileID: 0}
     - target: {fileID: 4808961237184544454, guid: 4787b777db887be47b6448dea5629414, type: 3}
       propertyPath: shroomLightManager
@@ -2156,7 +2156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607554300351413383, guid: 4787b777db887be47b6448dea5629414, type: 3}
       propertyPath: m_Intensity
-      value: 0
+      value: 1.07497
       objectReference: {fileID: 0}
     - target: {fileID: 4808961237184544454, guid: 4787b777db887be47b6448dea5629414, type: 3}
       propertyPath: shroomLightManager
@@ -5024,8 +5024,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d05d7918459dfb146b769d3b96ae5404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShroomLightManager
-  mindist: 0.5
-  maxdist: 1
+  mindist: 1
+  maxdist: 1.5
   texts:
   - {fileID: 76495565}
   hiderSprites:
@@ -5033,7 +5033,7 @@ MonoBehaviour:
   - {fileID: 384239671}
   - {fileID: 1610126964}
   - {fileID: 27259502}
-  lightvalue: 0.0050215484
+  lightvalue: 1.07497
 --- !u!4 &1162780720
 Transform:
   m_ObjectHideFlags: 0
@@ -5893,7 +5893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3607554300351413383, guid: 4787b777db887be47b6448dea5629414, type: 3}
       propertyPath: m_Intensity
-      value: 0
+      value: 1.07497
       objectReference: {fileID: 0}
     - target: {fileID: 4808961237184544454, guid: 4787b777db887be47b6448dea5629414, type: 3}
       propertyPath: shroomLightManager
