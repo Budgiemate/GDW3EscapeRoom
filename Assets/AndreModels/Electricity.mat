@@ -96,7 +96,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
-    - _Electrical_Scale: 20
+    - _Electrical_Scale: 300
     - _Emission_Strenght: 10
     - _EnvironmentReflections: 1
     - _GlossMapScale: 0
@@ -119,10 +119,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.19164579, g: 0.7169812, b: 0.6405381, a: 1}
-    - _Electrical_Speed: {r: 0, g: 0.5, b: 0, a: 0}
+    - _Color: {r: 0.19215687, g: 0.6589787, b: 0.7176471, a: 1}
+    - _Electrical_Speed: {r: 0, g: 0.05, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _NoiseSpeed: {r: 0, g: -1, b: 0, a: 0}
+    - _NoiseSpeed: {r: 0, g: -0.05, b: 0, a: 0}
     - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

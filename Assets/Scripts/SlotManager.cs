@@ -25,6 +25,8 @@ public class SlotManager : MonoBehaviour
 
     [SerializeField] public Animator anim;
 
+    public GameObject knife;
+
 
     private void Start()
     {
@@ -41,31 +43,12 @@ public class SlotManager : MonoBehaviour
         //Check if lock is correct
         if (slot1Num == slot1Ans  && slot2Num == slot2Ans && slot3Num == slot3Ans && slot4Num == slot4Ans && trigger == false)
         {
-
+            
             anim.Play("Armature|ArmatureAction", 0, 0.0f);
 
             trigger = true;
+            knife.SetActive(true);
 
-        }
-
-        if (Keyboard.current.digit1Key.wasPressedThisFrame)
-        {
-            MoveSlot1();
-        }
-
-        if (Keyboard.current.digit2Key.wasPressedThisFrame)
-        {
-            MoveSlot2();
-        }
-
-        if (Keyboard.current.digit3Key.wasPressedThisFrame)
-        {
-            MoveSlot3();
-        }
-
-        if (Keyboard.current.digit4Key.wasPressedThisFrame)
-        {
-            MoveSlot4();
         }
     }
 

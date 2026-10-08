@@ -8,6 +8,8 @@ TagManager:
   - CutMushroom
   - Knife
   - WallMushroom
+  - box
+  - Key
   layers:
   - Default
   - TransparentFX

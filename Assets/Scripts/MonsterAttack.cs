@@ -9,6 +9,12 @@ public class MonsterAttack : MonoBehaviour
     [SerializeField] private GameObject monster;
     [SerializeField] private float attackDelay = 10f;
     [SerializeField] private string attackAnimationName = "";
+    
+    [SerializeField] private AudioClip idle;
+    [SerializeField] private AudioClip attack;
+    [SerializeField] private AudioClip doorsound;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource monsterSource;
 
     private bool triggered = false;
 
@@ -47,7 +53,9 @@ public class MonsterAttack : MonoBehaviour
         {
             monster.SetActive(true);
         }
-
+        
+        audioSource.PlayOneShot(doorsound);
+        monsterSource.Play();        
         yield return new WaitForSeconds(attackDelay);
 
         if (monster != null)
@@ -55,8 +63,22 @@ public class MonsterAttack : MonoBehaviour
             Animator anim = monster.GetComponentInChildren<Animator>();
             if (anim != null)
             {
+                audioSource.PlayOneShot(attack);
                 anim.Play(attackAnimationName, 0, 0f);
             }
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (triggered)
+        {
+            return;
+        }
+
+        if (other.CompareTag("Key"))
+        {
+            TriggerTrap();
         }
     }
 }
