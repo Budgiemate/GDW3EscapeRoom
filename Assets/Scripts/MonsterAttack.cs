@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MonsterAttack : MonoBehaviour
 {
@@ -66,6 +67,9 @@ public class MonsterAttack : MonoBehaviour
                 audioSource.PlayOneShot(attack);
                 anim.Play(attackAnimationName, 0, 0f);
             }
+            
+            yield return new WaitForSeconds(2.3f);
+            SceneManager.LoadScene("TitleScreen");
         }
     }
     
