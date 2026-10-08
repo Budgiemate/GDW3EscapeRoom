@@ -13,7 +13,9 @@ public class ShroomLightManager : MonoBehaviour
     
     public TMP_Text[] texts;
     [Header("Sprite Configuration")]
-    public SpriteRenderer[] hiderSprites; 
+    public SpriteRenderer[] hiderSprites;
+
+    public float lightvalue;
 
     private void Start()
     {
@@ -65,7 +67,7 @@ public class ShroomLightManager : MonoBehaviour
             float distance = activeLights[i].RevealDistance;
             positionsArray[i] = new Vector4(pos.x, pos.y, pos.z, distance);
             
-            float lerp = Mathf.InverseLerp(maxdist, mindist, (pos - targetPosition).magnitude);
+            float lerp = lightvalue * Mathf.InverseLerp(maxdist, mindist, (pos - targetPosition).magnitude);
             if (lerp > greatest)
             {
                 greatest = lerp;

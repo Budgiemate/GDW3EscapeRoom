@@ -5,6 +5,7 @@ public class OSCtest : MonoBehaviour
     private Renderer _renderer;
     private Material _material;
     public Light light;
+    public ShroomLightManager shroomLightManager;
 
     void Start()
     {
@@ -27,6 +28,7 @@ public class OSCtest : MonoBehaviour
         if (value > 0)
         {
             light.intensity = value * 50.0f;
+            shroomLightManager.lightvalue = value * 50.0f;
             Color finalColor = Color.cyan * (1 + value * 100);
             _material.SetColor("_EmissionColor", finalColor);
             DynamicGI.SetEmissive(_renderer, finalColor);
